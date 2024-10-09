@@ -45,8 +45,13 @@ btnSearch.addEventListener('click', function() {
                         imgItem.alt = titleItem.textContent; 
 
                         const descriptionItem = document.createElement('div'); 
+                        if (item.data[0].description  === item.data[0].title){
+                            descriptionItem.textContent = "No hay información adicional";  //Mensaje por si la descripción es igual al titulo
+                            descriptionItem.className = "card-text";
+                            descriptionItem.classList.add("additional-class");
+                        }else{
                         descriptionItem.textContent = item.data[0].description 
-                        descriptionItem.className = "card-text"; 
+                        descriptionItem.className = "card-text"; }
 
                         const dateItem = document.createElement('p');
                         dateItem.textContent = item.data[0].date_created;
