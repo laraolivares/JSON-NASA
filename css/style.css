@@ -36,9 +36,12 @@ main {
     margin-top: 8px; 
 }
 
+.additional-class{
+  color: gray;
+}
 .titleDiv{
   margin-top: 10px;
-  height: 80px;
+  height: 90px;
 }
 
 .date{
@@ -47,3 +50,4 @@ main {
   margin-top: 20px;
   margin-bottom: -10px;
 }
+
