@@ -1,0 +1,49 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+  #contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.card {
+  margin: 0 30px 50px 0 ;
+  padding: 0;
+  height: 400px;
+    width: 400px;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.card-body {
+  height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    padding: 0;
+}
+
+.card-text {
+    flex-grow: 1; 
+    max-height: 200px; 
+    overflow-y: auto; /* Para poder scrollear */
+    margin-top: 8px; 
+}
+
+.titleDiv{
+  margin-top: 10px;
+  height: 80px;
+}
+
+.date{
+  color: gray;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
